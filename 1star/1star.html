@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM2 - W7P1 - 1 Star Exercise</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./lib/libraries/p5.min.js"></script>
+    <script src="./lib/libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <h1>1 Star Exercise</h1>
+    <p>Your sketch:</p>
+    <div class="guidance">
+        <h2>Instructions</h2>
+        <div>
+            <p>Explore the techniques presented in the lecture, by animating a penguin character (<a href="https://opengameart.org/content/penguin-for-loderunner" target="_blank">penguin sprite sheet</a>, credit: biodegradableguy), or any other sprite sheet of your choice (more examples available on <a href="https://opengameart.org/content/tilesets-5" target="_blank">opengameart</a> and <a href="https://itch.io/game-assets/tag-2d/tag-top-down" target="_blank">itch.io</a>)
+            </p>
+            <h3>Create a Sprite</h3>
+            <ol>
+                <li>
+                    Use <code>preload()</code> to load in the sprite sheeting in the assets folder.
+                </li>
+                <li>
+                    Animate your character using the JSON and sprite sheet example in the lecture. Look at <a href="https://github.com/UoY-PDM-2/PDM2-example-code/tree/main/Lectures/W7L1_Animation_Single_SpriteSheet_Simple" target="_blank">W7L1_Animation_Single_SpriteSheet_Simple</a> for an example of this method.
+                </li>
+            </ol>
+            <h3>Move the Sprite</h3>
+             <p>
+                    Now that the character is animated, let's make it move.
+            </p>
+            <ol>
+                <li>
+                    Use <code>keyPressed()</code> or <code>keyIsDown()</code> to make the sprite move around the canvas (don't worry about changing animations yet)
+                </li>
+            </ol>
+            <p>
+                    Now that the character can move, you should notice two issues. First, the sprite does not change. Second, the animations only match some movement, e.g. there is only a 'right' moving animation and not a 'left'. Let’s fix this.
+            </p>
+            <ol>
+                 <li>
+                    Modify your code to use different animations on the sprite sheet. If you are using the example sheet, you will notice that each row is a single animation sequence. (you will need to edit the json, have a go and asked for help)
+                </li>
+                 <li>
+                    If we want to flip a value have have we looked at doing this in the passed? Can we used this to make the image face left rather than right?
+                </li>
+            </ol>
+               
+     
+        </div>
+        <!-- <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>Include tips that might help students get unstuck.</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script src="sketch.js"></script>
+    <script src="checkbox.js"></script>
+  </body>
+</html>

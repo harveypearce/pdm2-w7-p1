@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM2 - W7P1 - 2 Star Exercise</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./lib/libraries/p5.min.js"></script>
+    <script src="./lib/libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <h1>2 Star Exercise</h1>
+    <div class="guidance">
+        <h2>Environments</h2>
+        <div>
+            <h3>Create an Environment</h3>
+            <p>
+               In the second Lecture we also learnt about how we can create environments using Tile sets
+            </p>
+            <p>
+                Start by finding a Tile Set you want to use (<a href="https://opengameart.org/content/tilesets-5" target="_blank">opengameart</a>, <a href="https://itch.io/game-assets/tag-2d/tag-top-down" target="_blank">itch.io</a>  )
+            </p>
+            <ol>
+                <li>
+                    First you must add the sprite sheet as an asset and load it onto your sketch using <code>preload()</code>
+                </li>
+                <li>
+                    Using the extra parameters of <code>image()</code> to crop the image to each tile
+                </li>
+                <li>
+                    Place the tiles to create an environment.
+                </li>
+            </ol>
+            <h3>Using Classes to Create an Environment</h3>
+            <p>
+               Now we have put everything together lets use create a class to help speed up making environments.
+            </p>
+            <ol>
+                <li>
+                    Create a new .js file in your project. name it 'enviroment.js'
+                </li>
+                <li>
+                    In this file create a new class called 'EnvironmentTiles'
+                </li>
+                <li>
+                   In the class create a method for each of the tiles you want to use.
+                </li>
+            </ol>
+
+            <p>
+                To complete this task think about how layers work in p5.js. Is it possible for the player to talk behind an object?
+            </p>
+
+           
+        </div>
+        <!-- <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>Include tips that might help students get unstuck.</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script src="toggle.js"></script>
+  </body>
+</html>
